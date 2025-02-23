@@ -1,0 +1,51 @@
+@import "../../app.scss";
+
+.about{
+  height: 100%;
+  // width: ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+ 
+  padding: 20px;
+
+
+  .coming{
+
+    @include mobile {
+      padding-top: 50px;
+    }
+    
+     h1{
+        font-weight: 900;
+        font-size: 50px;
+        top: 250px;
+        color: orange;
+
+
+        @include mobile {
+           font-size: 36px;
+           padding: 10px;
+           top: 350px;
+          }
+    }
+  }
+
+   .date{
+    p{
+      align-items: center; 
+        // font-size: 36px;
+
+
+        @include mobile {
+            // font-size: 25px;
+           }
+
+    }
+    .name{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
