@@ -34,7 +34,7 @@ const Education = () => {
        
       >
         <motion.div variants={textVariants} className="img-container">
-          <img src="/hero2.webp" alt="" />
+          <img src="/hero2.webp" alt="no image" />
         </motion.div>
         <motion.div variants={textVariants} className="education-container">
           <motion.h2>Education</motion.h2>

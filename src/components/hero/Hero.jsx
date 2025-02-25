@@ -58,15 +58,14 @@ const Hero = () => {
             BCA&nbsp; 2<sup>nd</sup> Year <motion.span>Student</motion.span>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Project
+            <motion.button variants={textVariants} onClick={handleScroll}>
+            <b>Contact Me</b>
             </motion.button>
             <motion.button
               className="btn2"
               variants={textVariants}
-              onClick={handleScroll}
             >
-              Contact Me
+            <a href="https://drive.google.com/file/d/1Myy7MnSZILHpjeN-9LDJVkTbvwrW25sz/view"><b>GET RESUME</b></a>
             </motion.button>
           </motion.div>
           <motion.img
@@ -91,7 +90,7 @@ const Hero = () => {
         animate="animate"
         className="imageContainer"
       >
-        <motion.img variants={textVariants} src="/hero2.png" alt="" />
+        <motion.img variants={textVariants} src="/hero2.png" alt="no image" />
       </motion.div>
     </div>
   );
