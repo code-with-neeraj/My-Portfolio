@@ -24,7 +24,7 @@ const Navbar = () => {
           <a href="https://www.instagram.com/neeraj_kumar_2002/">
             <img src="/instagram.png" alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/neeraj-kumar-939435310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <a href="https://www.linkedin.com/in/neerajkumar9844?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <img src="/linkedin.png" alt="" />
           </a>
           <a href="https://github.com/code-with-neeraj">
