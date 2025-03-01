@@ -1,5 +1,7 @@
 import "./education.scss";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSchool, faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 
 const textVariants = {
   initial: {
@@ -26,35 +28,52 @@ const textVariants = {
 
 const Education = () => {
   return (
-    <motion.div className="container"  initial="initial"
-    animate="animate">
-      <motion.div
-        className="wrapper"
-        variants={textVariants}
-       
-      >
-        <motion.div variants={textVariants} className="img-container">
-          <img src="/hero2.webp" alt="no image" />
-        </motion.div>
-        <motion.div variants={textVariants} className="education-container">
-          <motion.h2>Education</motion.h2>
-          <ul>
-  <motion.li variants={textVariants}><b>Class X (CBSE)</b></motion.li>
-  <motion.li variants={textVariants}><b>Class XII (CBSE)</b></motion.li>
-  <motion.li variants={textVariants}><b>Graduation: BCA</b></motion.li>
-</ul>
-
-        </motion.div>
-        <motion.div className="hobby-container">
-          <motion.h2 variants={textVariants}>Hobby</motion.h2>
-          <ul>
-  <motion.div variants={textVariants}><li>Photography</li></motion.div>
-  <motion.div variants={textVariants}><li>Gaming</li></motion.div>
-  <motion.div variants={textVariants}><li>Reading</li></motion.div>
-</ul>
-
-        </motion.div>
+    <motion.div className="container" initial="initial" animate="animate">
+      <motion.div className="main" variants={textVariants}>
+        <motion.h1 variants={textVariants}>Educations</motion.h1>
+        <motion.div className="line" variants={textVariants}></motion.div>
       </motion.div>
+      <motion.div className="wrapper" variants={textVariants}>
+        <motion.div className="first" variants={textVariants}>
+          <motion.div className="imgBox" variants={textVariants}>
+            <FontAwesomeIcon
+              icon={faUserGraduate}
+              size="lg"
+              style={{ color: "#eeece8" }}
+            />{" "}
+          </motion.div>
+          <motion.div className="content" variants={textVariants}>
+            <motion.p id="date" variants={textVariants}>2023-2027</motion.p>
+            <motion.h3>
+              <motion.b variants={textVariants}>BACHELOR OF COMPUTER APPLICATIONS</motion.b>
+            </motion.h3>
+            <motion.p id="place" variants={textVariants}>Patliputra University, Patna</motion.p>
+          </motion.div>
+        </motion.div>
+        <motion.div className="second" variants={textVariants}>
+        <motion.div className="imgBox" variants={textVariants}>
+        <FontAwesomeIcon icon={faSchool} style={{color: "#f2f2f2",}} />       
+        </motion.div>
+        <motion.div className="content" variants={textVariants}> 
+          <motion.p variants={textVariants}>2020-2022</motion.p>
+        <motion.h3 variants={textVariants}><b>HIGHER SECONDARY CERTIFICATE</b></motion.h3>
+        <motion.p id="place" variants={textVariants}>Shakti Shanti Academy</motion.p>
+        </motion.div>
+       
+      </motion.div>
+      <motion.div className="third" variants={textVariants}>
+        <motion.div className="imgBox" variants={textVariants}>
+        <FontAwesomeIcon icon={faSchool} style={{color: "#f2f2f2",}} />        
+        </motion.div>
+        <motion.div className="content" variants={textVariants}> 
+          <p></p>
+        <motion.h3 variants={textVariants}><b>SECONDARY SECONDARY CERTIFICATE</b></motion.h3>
+        <motion.p id="place" variants={textVariants}>Chapra Central School</motion.p>
+        </motion.div>
+       
+      </motion.div>
+      </motion.div>
+
       <motion.div variants={textVariants} className="skill-container">
         <motion.div variants={textVariants} className="skills">
           <motion.h1>Skills</motion.h1>

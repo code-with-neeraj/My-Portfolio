@@ -4,110 +4,143 @@
   height: 100%;
   max-width: 1366px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .main{
+    height: 45px;
+    gap: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include mobile {
+      margin-left: 40px;
+    }
+
+    h1{
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .line{
+      width: 70%;
+      background: linear-gradient(to right,rgb(186, 172, 172), rgba(244, 244, 246, 0.148));
+      height: 6px;
+      position: relative;
+      top: 3px;
+      border-radius: 5px;
+
+      @include mobile {
+        width: min(50%, 100px);
+      }
+    }
+  }
 
   .wrapper {
-    height: 65%;
+    height: 55%;
     padding: 10px;
     max-width: 1366px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    gap: 30px;
 
     @include mobile {
-      justify-content: center;
-      height: 70%;
-      
+      margin: 30px 5px 10px 5px;
+      flex-wrap: wrap;
     }
+    
 
-    .img-container {
-      @include mobile {
-        padding-top: 10px;
-      }
+    .first{
+      height: 130px;
+      width: 450px;
+      display: flex;
+      margin: 5px;
+      justify-content: flex-start;
+      gap: 15px;
+      border: 1.5px solid gray;
+      background: linear-gradient(to bottom,rgb(17, 17, 50), rgb(80, 80, 100));
+      border-radius: 5px;
+      overflow: hidden;
 
-      img {
-        height: 40vh;
-        width: 40vh;
-        border-radius: 50%;
-        box-shadow: rgba(233, 233, 237, 0.462) 0px 50px 100px -50px,
-          rgba(234, 232, 232, 0.3) 0px 30px 60px -100px,
-          rgba(247, 251, 255, 0.147) 0px -2px 6px 50px inset;
-
-        @include mobile {
-          height: 25vh;
-          width: 25vh;
-        }
-      }
-    }
-    .education-container {
-      width: 300px;
-
-      h2 {
-        text-align: center;
-        font-size: 50px;
-        font-weight: 900;
-
-        @include mobile {
-          font-size: 36px;
-        }
-      }
-      ul {
-        padding-left: 50px;
-
-        @include mobile {
-          padding-left: 75px;
-        }
-
-        li {
-          list-style: none;
-          font-size: 20px;
-          font-weight: 400;
-          margin: 10px;
-
-          @include mobile {
-            // font-size: px;
-            margin: 5px;
-          }
-        }
-      }
-    }
-
-    .hobby-container {
-      width: 400px;
-
-      h2 {
-        text-align: center;
-        padding-bottom: 25px;
-        font-size: 50px;
-        font-weight: 900;
-
-        @include mobile {
-          font-size: 36px;
-          padding-bottom: 15px;
-        }
-      }
-      ul {
+      .imgBox{
+        width: 50px;
         display: flex;
-        flex-direction: row;
+        align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        height: auto;
+        padding: 5px;
 
-        li {
-          list-style: none;
-          background: rgba(229, 224, 224, 0.315);
-          color: white;
-          font-size: 20px;
-          font-weight: 400;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          padding: 10px 15px;
-          border-radius: 6px;
-          animation: bounce 0.5s infinite alternate;
+        svg{
+          height: 30px;
         }
+      
+      }
+      .content{
+       display: flex;
+       flex-direction: column;
+       padding: 5px;
+       gap: 12px;
+       width: max-content;
+
+       p {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+       }
+
+       #place{
+        align-self: self-start;
+       }
       }
     }
+
+    .second, .third{
+      height: 130px;
+      width: 450px;
+      display: flex;
+      border: 1.5px solid gray;
+      justify-content: flex-start;
+      gap: 15px;
+      background: linear-gradient(to bottom,rgb(17, 17, 50), rgb(80, 80, 100));
+      gap: 5px;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .imgBox{
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        svg{
+          height: 30px;
+        }
+      
+      }
+      .content{
+       display: flex;
+       flex-direction: column;
+       padding: 5px;
+       gap: 12px;
+       width: max-content;
+
+       p {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+       }
+       #place{
+        align-self: self-start;
+       }
+      }
+    }
+   
+
   }
 
   .skill-container {
@@ -118,7 +151,7 @@
 
     @include mobile {
       justify-content: center;
-      height: 30%;
+      height: 25%;
     }
 
     .skills {
@@ -164,20 +197,13 @@
   }
 }
 
-@keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-10px);
-  }
-}
+
 
 @keyframes scrollAnimation {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-100%);
   }
 }
