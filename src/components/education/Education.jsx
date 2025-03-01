@@ -67,7 +67,7 @@ const Education = () => {
         </motion.div>
         <motion.div className="content" variants={textVariants}> 
           <p></p>
-        <motion.h3 variants={textVariants}><b>SECONDARY SECONDARY CERTIFICATE</b></motion.h3>
+        <motion.h3 variants={textVariants}><b>SECONDARY SCHOOL CERTIFICATE</b></motion.h3>
         <motion.p id="place" variants={textVariants}>Chapra Central School</motion.p>
         </motion.div>
        
