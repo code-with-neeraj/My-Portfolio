@@ -10,7 +10,7 @@ HTML5, CSS3, JavaScript (ES6+)
 
 React.js 
 
-Tailwind CSS / Bootstrap
+Sass
 
 Framer Motion (for animations)
 
@@ -21,8 +21,6 @@ Git & GitHub
 Fully responsive design
 
 Smooth animations and transitions
-
-Dark mode support
 
 Interactive UI elements
 
