@@ -43,7 +43,7 @@ const Education = () => {
             />{" "}
           </motion.div>
           <motion.div className="content" variants={textVariants}>
-            <motion.p id="date" variants={textVariants}>2023-2027</motion.p>
+            <motion.p id="date" variants={textVariants}>2023-2026</motion.p>
             <motion.h3>
               <motion.b variants={textVariants}>BACHELOR OF COMPUTER APPLICATIONS</motion.b>
             </motion.h3>
