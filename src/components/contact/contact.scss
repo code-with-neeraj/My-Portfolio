@@ -2,39 +2,39 @@
 
 .contact {
   height: 100%;
-  max-width: 1250px;
+  max-width: 78.125rem; // 1250px
   margin: auto;
   display: flex;
   align-items: center;
-  // gap: 50px;
+  // gap: 3.125rem;
 
   @include mobile {
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem; // 10px
     flex-direction: column;
   }
 
   .textContainer {
-    flex: 1;
+    // flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem; // 40px
     overflow: hidden;
 
     @include mobile {
-      // gap: 20px;
+      height: 45%;
       text-align: center;
       align-items: center;
     }
 
     h1 {
-      font-size: 100px;
+      font-size: 6.25rem; // 100px
       color: rgba(255, 0, 0, 0.879);
-      margin-top: 45px;
-    
+      margin-top: 0.3125rem; // 5px
 
       @include mobile {
-        font-size: 30px; 
+        font-size: 1.875rem; // 30px
       }
     }
 
@@ -48,13 +48,13 @@
     position: relative;
 
     @include mobile {
-      padding: 30px;
+      padding: 1.875rem; // 30px
       width: 100%;
     }
 
     .phoneSvg {
       stroke: orange;
-      stroke-width: 2px;
+      stroke-width: 0.125rem; // 2px
       position: absolute;
       margin: auto;
       z-index: -1;
@@ -63,49 +63,52 @@
         @include mobile {
           width: 70%;
           height: 80%;
-          font-size: 2px;
+          font-size: 0.125rem; // 2px
         }
       }
 
       @include mobile {
-        bottom: 100px;
-        left: 80px;
+        bottom: 6.25rem; // 100px
+        left: 5rem; // 80px
       }
     }
 
     form {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 1.25rem; // 20px
 
       input,
       textarea {
-        padding: 20px;
+        padding: 1.25rem; // 20px
         background-color: transparent;
         border: 1px solid white;
         color: white;
-        border-radius: 5px;
+        border-radius: 0.3125rem; // 5px
 
         @include mobile {
-          padding: 10px;
+          padding: 0.625rem; // 10px
         }
       }
 
       button {
-        padding: 20px;
-        font-size: 20px;
+        padding: 1.25rem; // 20px
+        font-size: 1.25rem; // 20px
         border: none;
         background-color: orange;
         cursor: pointer;
         font-weight: 500;
 
         @include mobile {
-          padding: 10px;
+          padding: 0.625rem; // 10px
         }
       }
-      button:hover{
+
+      button:hover {
         background-color: rgba(238, 164, 26, 0.892);
       }
     }
   }
 }
+
+
