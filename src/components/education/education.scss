@@ -18,6 +18,7 @@
 
     @include mobile {
       margin-left: 40px;
+      // margin-top: 10px;
     }
 
     h1{
@@ -152,6 +153,7 @@
     @include mobile {
       justify-content: center;
       height: 25%;
+      margin-top: 40px;
     }
 
     .skills {

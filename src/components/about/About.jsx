@@ -1,6 +1,8 @@
+
 import  { useRef } from 'react';
 import './about.scss';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 const SocialSidebar = () => {
