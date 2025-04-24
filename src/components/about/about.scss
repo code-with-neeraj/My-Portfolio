@@ -29,7 +29,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 0.9375rem;
-  z-index: 1000;
+  z-index: 1;
 
   @include mobile {
     top: 50%; /* Adjust for mobile if needed */
