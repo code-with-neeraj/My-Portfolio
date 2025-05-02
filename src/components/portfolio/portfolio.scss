@@ -38,6 +38,7 @@
       align-items: center;
       justify-content: center;
       gap: 3rem;
+      z-index: 10;
 
       @include mobile{
        flex-direction: column;
