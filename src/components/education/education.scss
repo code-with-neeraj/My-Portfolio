@@ -1,0 +1,211 @@
+@import "../../app.scss";
+
+.container {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .main{
+    height: 45px;
+    gap: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include mobile {
+      margin-left: 40px;
+      // margin-top: 10px;
+    }
+
+    h1{
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .line{
+      width: 70%;
+      background: linear-gradient(to right,rgb(186, 172, 172), rgba(244, 244, 246, 0.148));
+      height: 6px;
+      position: relative;
+      top: 3px;
+      border-radius: 5px;
+
+      @include mobile {
+        width: min(50%, 100px);
+      }
+    }
+  }
+
+  .wrapper {
+    height: 55%;
+    padding: 10px;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+
+    @include mobile {
+      margin: 30px 5px 10px 5px;
+      flex-wrap: wrap;
+    }
+    
+
+    .first{
+      height: 130px;
+      width: 450px;
+      display: flex;
+      margin: 5px;
+      justify-content: flex-start;
+      gap: 15px;
+      border: 1.5px solid gray;
+      background: linear-gradient(to bottom,rgb(17, 17, 50), rgb(80, 80, 100));
+      border-radius: 5px;
+      overflow: hidden;
+
+      .imgBox{
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        svg{
+          height: 30px;
+        }
+      
+      }
+      .content{
+       display: flex;
+       flex-direction: column;
+       padding: 5px;
+       gap: 12px;
+       width: max-content;
+
+       p {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+       }
+
+       #place{
+        align-self: self-start;
+       }
+      }
+    }
+
+    .second, .third{
+      height: 130px;
+      width: 450px;
+      display: flex;
+      border: 1.5px solid gray;
+      justify-content: flex-start;
+      gap: 15px;
+      background: linear-gradient(to bottom,rgb(17, 17, 50), rgb(80, 80, 100));
+      gap: 5px;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .imgBox{
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        svg{
+          height: 30px;
+        }
+      
+      }
+      .content{
+       display: flex;
+       flex-direction: column;
+       padding: 5px;
+       gap: 12px;
+       width: max-content;
+
+       p {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+       }
+       #place{
+        align-self: self-start;
+       }
+      }
+    }
+   
+
+  }
+
+  .skill-container {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      justify-content: center;
+      height: 25%;
+      margin-top: 40px;
+    }
+
+    .skills {
+      width: 800px;
+      overflow: hidden;
+
+      h1 {
+        text-align: center;
+        font-size: 60px;
+
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+      .line {
+        height: 5px;
+        width: 70%;
+        margin: 0 auto;
+        background: orange;
+        border-radius: 3px;
+      }
+      .horizontal-scroll {
+        width: 100%;
+        white-space: nowrap;
+
+        .icon-container {
+          display: flex;
+          gap: 20px;
+          object-fit: cover;
+          padding: 15px;
+          animation: scrollAnimation 15s linear infinite;
+          width: max-content;
+
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            // box-shadow: rgba(237, 234, 234, 0.25) 0px 25px 50px -12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,120 @@
+@import "../../app.scss";
+
+.about{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+
+}
+
+@keyframes rippleAnim {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+.sidebar-a {
+  position: relative; /* Changed from fixed to absolute */
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.9375rem;
+  z-index: 1;
+
+  @include mobile {
+    top: 50%; /* Adjust for mobile if needed */
+    left: 10%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.sidebar-icon {
+  position: relative;
+  width: 4.375rem; /* 70px */
+  height: 4.375rem; 
+  background:gray;
+  border: 0.125rem solid #000;
+  border-radius: 1.5625rem; 
+  color: #000;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-decoration: none;
+  padding-left: 0.9375rem;
+}
+
+.sidebar-icon:hover {
+  width: 11.25rem;
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient changes on hover */
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+}
+
+.sidebar-icon i {
+  z-index: 2;
+  font-size: 2.5rem;
+}
+
+.label {
+  margin-left: 0.9375rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-icon:hover .label {
+  opacity: 1;
+}
+
+.ripple::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 6.25rem; /* 100px */
+  height: 6.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ripple.clicked::after {
+  animation: rippleAnim 0.6s ease-out;
+}
+
+
+
+
+
+
+  .date {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto; // Pushes the div to the end of the screen
+    p {
+      @include mobile {
+        // font-size: 25px;
+      }
+    }
+    .name {
+     color: gray;
+    }
+  }

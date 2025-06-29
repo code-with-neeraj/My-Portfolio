@@ -1,0 +1,171 @@
+@import "../../app.scss";
+
+.project {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  .heading {
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+
+    @include mobile {
+      // margin-top: 40px;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      font-style: italic;
+
+      @include mobile {
+        font-size: 36px;
+      }
+    }
+    .line {
+      height: 8px;
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 5px;
+      background: linear-gradient(to right, #e66b38, #fb717f);
+      text-align: center;
+      margin-top: 5px;
+
+      @include mobile {
+        margin-top: 10px;
+        width: 80%;
+      }
+    }
+  }
+
+  .container {
+    height: 80%;
+    width: 80%;
+    margin-top: 10px;
+    padding: 30px 0;
+
+    @include mobile {
+      height: 100%;
+      width: 90%;
+      margin-top: 60px;
+    }
+
+    .slider-container {
+      margin: 0 40px;
+
+      .card {
+        border: 1px solid gray;
+        height: 450px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5px;
+        backdrop-filter: blur(30px);
+        background-color: rgba(255, 255, 255, 0.097);
+        cursor: pointer;
+
+        @include mobile {
+          margin-bottom: 10px;
+          padding: 10px;
+        }
+
+        .card-header {
+          height: 250px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          // backdrop-filter: blur(0px);
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+          }
+        }
+
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          gap: 20px;
+
+          p.name {
+            align-items: center;
+            margin-top: 2px;
+            font-size: 35px;
+            font-weight: 600;
+            color: orange;
+          }
+
+          p.review {
+            text-align: center;
+            font-weight: 400;
+            color: gray;
+          }
+
+          .button {
+            background-color: #6366f1;
+            color: white;
+            font-size: 1.125rem;
+            padding: 6px 24px;
+            border-radius: 10px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.674);
+          }
+          button:hover {
+            background-color: #6365f1d3;
+            box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.674);
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots {
+
+  @include mobile {
+    display: none !important;
+    
+  }
+}
+
+
+
+ul.slick-dots{
+  bottom: -60px;
+  
+  @include mobile {
+    bottom: 0px;
+  }
+}
+
+
+
+.slick-dots li {
+  background: rgba(255, 255, 255, 0.232);
+  border-radius: 50%;
+
+  @include mobile {
+    // background: red($color: #000000);
+    background: transparent;
+  }
+
+
+}
