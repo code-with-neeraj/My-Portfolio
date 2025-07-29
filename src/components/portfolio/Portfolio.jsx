@@ -19,6 +19,14 @@ const items = [
     link: "https://hospitalo-yjlj.onrender.com",
     git:"http://hospitalo-admin.onrender.com/",
   },
+  {
+    id: 3,
+    title: "Music Streaming Application",
+    img: "/music-class.webp",
+    desc: "Presenting Music Class – a platform designed for aspiring musicians and learners. Built using React, Next.js & Tailwind, it features course listings, animations, and responsive design. Let’s make learning music beautiful & accessible 🎼",
+    link: "https://music-class-livid.vercel.app/",
+    git:"https://github.com/code-with-neeraj/MUSIC-CLASS",
+  },
 ];
 
 const Single = ({ item }) => {
