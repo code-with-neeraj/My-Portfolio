@@ -55,7 +55,7 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>NEERAJ KUMAR</motion.h2>
           <motion.h1 variants={textVariants}>
-            BCA&nbsp; 2<sup>nd</sup> Year <motion.span>Student</motion.span>
+            BCA&nbsp; 3<sup>rd</sup> Year <motion.span>Student</motion.span>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants} onClick={handleScroll}>
