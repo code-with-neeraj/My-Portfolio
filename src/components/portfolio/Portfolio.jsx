@@ -27,6 +27,14 @@ const items = [
     link: "https://music-class-livid.vercel.app/",
     git:"https://github.com/code-with-neeraj/MUSIC-CLASS",
   },
+  {
+    id: 4,
+    title: "Meet-Up: Real-Time Chat Application",
+    img: "/meet-up.webp",
+    desc: "🚀 Meet-Up: Real-Time Chat App Built a modern chat platform with React, Node.js, Express, MongoDB, and Socket.IO. Features include authentication, live messaging, profile management, image sharing, and online user tracking. Deployed with Vercel for seamless full-stack experience.",
+    link: "https://meet-up-alpha.vercel.app",
+    git:"https://github.com/code-with-neeraj/Meet-Up",
+  },
 ];
 
 const Single = ({ item }) => {
