@@ -116,6 +116,8 @@ const Education = () => {
               <img src="/git.jpg" alt="git" />
               <img src="/tailwind.jpg" alt="tailwind" />
               <img src="/bootstrap.png" alt="bootstrap" />
+              <img src="/typescript-icon.svg" alt="typescript" />
+              <img src="/nextjs.jpg" alt="nextjs" />
             </div>
           </div>
         </motion.div>
